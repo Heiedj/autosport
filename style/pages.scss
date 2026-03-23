@@ -1,0 +1,438 @@
+// login
+.login-user {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+        width: 400px;
+        margin-bottom: 50px;
+        input,
+        button {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
+    span {
+        cursor: pointer;
+        text-decoration: underline;
+        margin-top: 10px;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 15px;
+        color: #131313;
+        &:hover {
+            transition: 0.3s;
+            color: #cc0000;
+        }
+    }
+    .checkbox-reg {
+        display: flex;
+        flex-direction: row-reverse;
+        max-height: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        input {
+            max-width: 15px;
+            margin-bottom: 0px;
+        }
+        label {
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 10px;
+            color: #131313;
+            margin-left: 10px;
+            a {
+                font-family: "Montserrat";
+                font-weight: 300;
+                font-size: 10px;
+                color: #131313;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// ----------
+//ЛК
+.text-account {
+    margin-top: 50px;
+}
+.block-function-account {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .block-data {
+        border: 1px solid #131313;
+        padding: 15px;
+        h4 {
+            font-family: "RussoOne";
+            font-weight: 400;
+            font-size: 15px;
+            color: #131313;
+            margin-bottom: 10px;
+        }
+        li {
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 15px;
+            color: #131313;
+            margin-bottom: 10px;
+        }
+    }
+}
+// страница товара
+.card-pages {
+    .card {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-around;
+        max-height: none;
+        height: auto;
+        form {
+            height: 90%;
+            justify-content: space-between;
+        }
+        .img-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            img {
+                max-width: 50%;
+            }
+        }
+        .footer-card {
+            flex-direction: column;
+            max-width: 50%;
+            label,
+            .description {
+                font-family: "Montserrat";
+                font-weight: 300;
+                font-size: 15px;
+                color: #131313;
+                margin-bottom: 10px;
+            }
+            select {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+// ------------
+// каталог
+// ------------
+.catalog {
+    display: flex;
+    margin-bottom: 50px;
+    .filter {
+        width: 20%;
+        form {
+            padding: 20px;
+            border-right: 1px solid #cc0000;
+            max-width: 100%;
+            .item-filter {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                input {
+                    min-height: 100%;
+                    margin-bottom: 0px;
+                }
+                label {
+                    font-family: "Montserrat";
+                    font-weight: 300;
+                    font-size: 15px;
+                    color: #131313;
+                }
+            }
+        }
+    }
+    .catalog-card {
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .none-card {
+            font-family: "Montserrat";
+            font-weight: 500;
+            color: #131313;
+            font-size: 14px;
+        }
+    }
+}
+// ------------
+// Добавление товара
+.checkbox-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .checkbox-category {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 15px;
+            color: #131313;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 50px;
+        }
+    }
+}
+.select-card {
+    margin-bottom: 20px;
+    label {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 15px;
+        color: #131313;
+    }
+    select {
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+        text-indent: 10px;
+        border: 1px solid #cc0000;
+        appearance: none; /* Убирает стандартный вид браузера */
+        -webkit-appearance: none; /* Для Safari */
+        -moz-appearance: none; /* Для Firefox */
+    }
+}
+.img-input {
+    label {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 15px;
+        color: #131313;
+    }
+    input {
+        border: 0;
+    }
+}
+// Все товары в админке
+.all-product {
+    border-collapse: collapse; /* Изменено с separate на collapse */
+    text-indent: initial;
+    border-spacing: 0; /* Обнуляем border-spacing */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    td {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 15px;
+        color: #131313;
+        border-right: 2px solid #131313;
+        border-bottom: 2px solid #131313;
+        padding: 20px;
+        text-align: center;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    tr {
+        border-bottom: 2px solid #131313;
+    }
+    th {
+        font-family: "Montserrat";
+        font-size: 15px;
+        color: #131313;
+        font-weight: 500;
+        border-right: 2px solid #131313;
+        border-bottom: 2px solid #131313;
+        &:nth-child(5) {
+            border-right: none;
+        }
+        &:nth-child(6) {
+            border-right: none;
+        }
+    }
+}
+
+.product-images {
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            display: flex;
+            span {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.delete-icon {
+    color: red; /* Цвет крестика */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 20px; /* Размер крестика */
+    margin-left: 10px; /* Отступ слева */
+}
+.delete-icon:hover {
+    color: darkred; /* Цвет при наведении */
+}
+
+// ---------
+.good-order {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h3 {
+        text-align: center;
+    }
+}
+
+// ---------
+
+// Заказы в админке
+.orders {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order {
+    flex: 1;
+    border: 1px solid #cc0000;
+    margin: 10px;
+    margin-top: 0;
+    min-width: 300px;
+    // text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    p {
+        color: #131313;
+        font-family: "Montserrat";
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    .data-order {
+        margin-bottom: 20px;
+    }
+    .function-order {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        .button {
+            margin: 5px;
+            display: block;
+        }
+    }
+}
+// ---------
+// о нас
+
+.about {
+    margin-bottom: 50px;
+    h3 {
+        margin-top: 50px;
+    }
+    p {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 20px;
+        color: #131313;
+        text-align: justify;
+        text-indent: 20px;
+        line-height: 1.5;
+    }
+    .right {
+        display: flex;
+        img {
+            margin: 0px 0px 10px 10px;
+        }
+    }
+    img {
+        max-width: 450px;
+    }
+    .left {
+        margin: 30px 0px;
+        display: flex;
+        img {
+            margin: 0px 10px 0px 0px;
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img {
+            width: 400px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// ---------
+// программа лояльности
+
+.conditions {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    p {
+        color: #131313;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 20px;
+        text-indent: 20px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    a {
+        color: #131313;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.blog {
+    h4 {
+        font-family: "RussoOne";
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}
+.card-blog {
+    margin-bottom: 30px;
+}
+// -------------
+// корзина
+
+.cart {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    table {
+        width: 1440px;
+        border: none;
+        th, td, thead, tr, tbody, tfoot{
+            border: none;
+        }
+        th,
+        td,
+        a:not(.buy) {
+            color: #131313;
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+}

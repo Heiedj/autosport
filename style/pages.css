@@ -1,0 +1,420 @@
+@charset "UTF-8";
+.login-user {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-user form {
+  width: 400px;
+  margin-bottom: 50px;
+}
+.login-user form input,
+.login-user form button {
+  box-sizing: border-box;
+  width: 100%;
+}
+.login-user span {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+}
+.login-user span:hover {
+  transition: 0.3s;
+  color: #cc0000;
+}
+.login-user .checkbox-reg {
+  display: flex;
+  flex-direction: row-reverse;
+  max-height: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login-user .checkbox-reg input {
+  max-width: 15px;
+  margin-bottom: 0px;
+}
+.login-user .checkbox-reg label {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 10px;
+  color: #131313;
+  margin-left: 10px;
+}
+.login-user .checkbox-reg label a {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 10px;
+  color: #131313;
+  text-decoration: underline;
+}
+
+.text-account {
+  margin-top: 50px;
+}
+
+.block-function-account {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.block-function-account .block-data {
+  border: 1px solid #131313;
+  padding: 15px;
+}
+.block-function-account .block-data h4 {
+  font-family: "RussoOne";
+  font-weight: 400;
+  font-size: 15px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.block-function-account .block-data li {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+
+.card-pages .card {
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-around;
+  max-height: none;
+  height: auto;
+}
+.card-pages .card form {
+  height: 90%;
+  justify-content: space-between;
+}
+.card-pages .card .img-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.card-pages .card .img-card-container img {
+  max-width: 50%;
+}
+.card-pages .card .footer-card {
+  flex-direction: column;
+  max-width: 50%;
+}
+.card-pages .card .footer-card label,
+.card-pages .card .footer-card .description {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.card-pages .card .footer-card select {
+  max-width: 300px;
+}
+
+.catalog {
+  display: flex;
+  margin-bottom: 50px;
+}
+.catalog .filter {
+  width: 20%;
+}
+.catalog .filter form {
+  padding: 20px;
+  border-right: 1px solid #cc0000;
+  max-width: 100%;
+}
+.catalog .filter form .item-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.catalog .filter form .item-filter input {
+  min-height: 100%;
+  margin-bottom: 0px;
+}
+.catalog .filter form .item-filter label {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+}
+.catalog .catalog-card {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog .catalog-card .none-card {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #131313;
+  font-size: 14px;
+}
+
+.checkbox-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.checkbox-block .checkbox-category {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkbox-block .checkbox-category label {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.checkbox-block .checkbox-category input {
+  width: 50px;
+}
+
+.select-card {
+  margin-bottom: 20px;
+}
+.select-card label {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+}
+.select-card select {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid #cc0000;
+  appearance: none; /* Убирает стандартный вид браузера */
+  -webkit-appearance: none; /* Для Safari */
+  -moz-appearance: none; /* Для Firefox */
+}
+
+.img-input label {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+}
+.img-input input {
+  border: 0;
+}
+
+.all-product {
+  border-collapse: collapse; /* Изменено с separate на collapse */
+  text-indent: initial;
+  border-spacing: 0; /* Обнуляем border-spacing */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.all-product td {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 15px;
+  color: #131313;
+  border-right: 2px solid #131313;
+  border-bottom: 2px solid #131313;
+  padding: 20px;
+  text-align: center;
+}
+.all-product td:last-child {
+  border-right: none;
+}
+.all-product tr {
+  border-bottom: 2px solid #131313;
+}
+.all-product th {
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #131313;
+  font-weight: 500;
+  border-right: 2px solid #131313;
+  border-bottom: 2px solid #131313;
+}
+.all-product th:nth-child(5) {
+  border-right: none;
+}
+.all-product th:nth-child(6) {
+  border-right: none;
+}
+
+.product-images ul {
+  display: flex;
+  justify-content: center;
+}
+.product-images ul li {
+  display: flex;
+}
+.product-images ul li span {
+  text-decoration: none;
+}
+
+.delete-icon {
+  color: red; /* Цвет крестика */
+  cursor: pointer; /* Указатель при наведении */
+  font-size: 20px; /* Размер крестика */
+  margin-left: 10px; /* Отступ слева */
+}
+
+.delete-icon:hover {
+  color: darkred; /* Цвет при наведении */
+}
+
+.good-order {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.good-order h3 {
+  text-align: center;
+}
+
+.orders {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.order {
+  flex: 1;
+  border: 1px solid #cc0000;
+  margin: 10px;
+  margin-top: 0;
+  min-width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.order p {
+  color: #131313;
+  font-family: "Montserrat";
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.order .data-order {
+  margin-bottom: 20px;
+}
+.order .function-order {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.order .function-order .button {
+  margin: 5px;
+  display: block;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+.about h3 {
+  margin-top: 50px;
+}
+.about p {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 20px;
+  color: #131313;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.5;
+}
+.about .right {
+  display: flex;
+}
+.about .right img {
+  margin: 0px 0px 10px 10px;
+}
+.about img {
+  max-width: 450px;
+}
+.about .left {
+  margin: 30px 0px;
+  display: flex;
+}
+.about .left img {
+  margin: 0px 10px 0px 0px;
+}
+.about .bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .bottom img {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.conditions {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.conditions p {
+  color: #131313;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 20px;
+  text-indent: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.conditions a {
+  color: #131313;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 20px;
+}
+.conditions .contact-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog h4 {
+  font-family: "RussoOne";
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.card-blog {
+  margin-bottom: 30px;
+}
+
+.cart {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cart table {
+  width: 1440px;
+  border: none;
+}
+.cart table th, .cart table td, .cart table thead, .cart table tr, .cart table tbody, .cart table tfoot {
+  border: none;
+}
+.cart table th,
+.cart table td,
+.cart table a:not(.buy) {
+  color: #131313;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 20px;
+}/*# sourceMappingURL=pages.css.map */

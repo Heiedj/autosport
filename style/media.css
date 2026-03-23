@@ -1,0 +1,195 @@
+@media screen and (max-width: 1200px) {
+  .slaider {
+    height: 390px;
+  }
+  .slaider .button-slaider {
+    height: 390px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .slaider {
+    height: 340px;
+  }
+  .slaider .button-slaider {
+    height: 340px;
+  }
+  .slaider #slaidTwo {
+    background-position: left;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .promo {
+    box-sizing: border-box;
+  }
+  .container {
+    padding: 0px 10px;
+  }
+  footer .container {
+    box-sizing: border-box;
+  }
+  .card {
+    margin-top: 0px;
+  }
+  .all-product {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cart td, .cart th {
+    font-size: 12px !important;
+    padding: 10px;
+  }
+  .cart img {
+    height: 100px !important;
+  }
+}
+@media screen and (max-width: 968px) {
+  .about img {
+    max-width: 200px;
+  }
+  .about .right img, .about .left img {
+    display: none;
+  }
+  .header-top,
+  .header-bottom {
+    display: none !important;
+  }
+  .burger {
+    display: flex;
+    background-color: #131313;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .menu-burger {
+    padding: 20px;
+    flex-direction: row-reverse;
+    background-color: #131313;
+    width: 100vw;
+    justify-content: space-around;
+  }
+  .menu-burger div {
+    display: flex;
+  }
+  .menu-burger .menu-category {
+    width: 50%;
+  }
+  .menu-burger .menu-category ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-burger a {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .catalog-index .items .catalog-item {
+    min-width: 250px;
+  }
+  .catalog-index .items .catalog-item span {
+    font-size: 15px;
+  }
+  .card {
+    height: 320px;
+  }
+  .card p, .card .new-price {
+    font-size: 12px;
+  }
+  .card .img-card-container {
+    width: 200px;
+    min-height: 200px;
+    margin: 0 auto;
+  }
+  .buy, .button, button {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+  .all-product td {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 764px) {
+  .catalog {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .catalog .filter {
+    width: 100%;
+  }
+  .catalog .filter form {
+    border: none;
+  }
+  .scroll {
+    overflow-x: auto !important;
+  }
+}
+@media screen and (max-width: 620px) {
+  h3 {
+    font-size: 25px;
+  }
+  p, a, span {
+    font-size: 10px;
+  }
+  .card-pages .card .img-card-container {
+    width: 300px;
+    padding: 0;
+  }
+  .menu-burger {
+    padding: 10px !important;
+  }
+  .orders {
+    width: 300px;
+  }
+  .orders .order {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card {
+    width: 320px;
+    padding: 0;
+  }
+  .footer-card form {
+    width: 320px;
+  }
+  .catalog-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    min-height: auto;
+  }
+  footer ul, footer a, footer span, footer address {
+    text-align: center;
+  }
+  footer ul {
+    margin: 5px 0px;
+  }
+  footer .logo, footer .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-pages .card {
+    flex-direction: column;
+  }
+  .card-pages .card .new-price {
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+  .card-pages .card .block-button {
+    margin-bottom: 10px;
+  }
+  .login-user form {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 579px) {
+  .catalog-index .items {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=media.css.map */

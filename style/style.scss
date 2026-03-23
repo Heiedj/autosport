@@ -1,0 +1,563 @@
+@import "null.scss";
+// #FFFFFF - white
+// #131313 - black;
+// #CC0000 - red;
+// #F4F4F4 - gray;
+
+// --------
+button, input, textarea, .card-button{
+  border-radius: 5px;
+}
+a,
+p,
+li,
+span {
+  color: #ffffff;
+}
+div {
+  box-sizing: border-box;
+}
+.active{
+  display: flex !important;
+}
+.menu-burger, .burger{
+  display: none;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+  background-color: #cc0000;
+  border: none;
+  padding: 10px 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+}
+// шапка
+header {
+  display: flex;
+  justify-content: center;
+  .header-top {
+    width: 100vw;
+    background-color: #131313;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .top-left {
+        display: flex;
+        align-items: center;
+        min-width: 500px;
+        justify-content: space-between;
+        p {
+          font-size: 12px;
+        }
+      }
+      .top-center {
+        display: flex;
+        min-width: 270px;
+        justify-content: space-between;
+        .text {
+          display: flex;
+          flex-direction: column;
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 3px;
+            &:hover {
+              transition: 0.3s;
+              color: #cc0000;
+              text-decoration: underline;
+            }
+          }
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    p,
+    a,
+    span {
+      font-family: "Montserrat";
+      font-weight: 300;
+    }
+    .top-right {
+      min-width: 90px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .header-bottom {
+    display: flex;
+    background-color: #cc0000;
+    min-height: 60px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      ul {
+        display: flex;
+        min-width: 440px;
+        display: flex;
+        justify-content: space-between;
+        li {
+          a {
+            font-family: "RussoOne";
+            font-weight: 400;
+            font-size: 14px;
+            &:hover {
+              transition: 0.3s;
+              color: #131313;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ---------------
+// слайдер
+#slaidOne {
+  background-image: url(/img/slider/slide1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slaidTwo {
+  background-image: url(/img/slider/slide2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slaidThree {
+  background-image: url(/img/slider/slide3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slaider {
+  display: flex;
+  max-width: 1440px;
+  height: 500px;
+  .slaidshow {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    .slaides {
+      width: 400vw;
+      display: flex;
+      transition: 1s;
+      .slaid {
+        max-width: 1440px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .slaid-content {
+          margin-left: 12%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  .button-slaider {
+    z-index: 1;
+    max-width: 1440px;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .block-button {
+      margin-right: 70px;
+      width: 270px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      div {
+        box-sizing: border-box;
+        width: 70px;
+        height: 3px;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+.click-but {
+  background-color: #cc0000 !important;
+}
+h3 {
+  font-family: "RussoOne";
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+// Каталог на главной
+.catalog-index {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .catalog-item {
+      margin-top: 10px;
+      background-color: #ffffff;
+      min-width: 410px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      span {
+        font-family: "RussoOne";
+        font-weight: 400;
+        font-size: 18px;
+        color: #131313;
+      }
+    }
+  }
+}
+.autorsport-index-catalog:hover {
+  background-image: url(/img/autosport-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  span {
+    transition: 0.8s;
+    color: #ffffff !important;
+  }
+}
+.go-kart-index-catalog:hover {
+  background-image: url(/img/carting-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  span {
+    transition: 0.8s;
+    color: #ffffff !important;
+  }
+}
+.life-style-index-catalog:hover {
+  background-image: url(/img/accessories-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+// -----------
+// акция
+.promo {
+  box-sizing: content-box;
+  padding-left: 40px;
+  width: 100%;
+  min-height: 230px;
+  background-image: url(/img/promo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h4 {
+    color: #ffffff;
+    font-family: "RussoOne";
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  a {
+    background-color: #cc0000;
+    border: none;
+    padding: 10px 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.buy,
+.button {
+  background-color: #cc0000;
+  border: none;
+  padding: 10px 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+}
+// -----------
+
+// каталог
+.hit {
+  margin-top: 50px;
+}
+.catalog-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  margin-top: 50px;
+  max-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 450px;
+  height: 450px;
+  .img-card-container {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    min-height: 260px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #131313;
+    font-size: 14px;
+  }
+  .new-price {
+    font-family: "RussoOne";
+    font-weight: 400;
+    color: #6c7a89;
+    font-size: 16px;
+  }
+  .block-button {
+    display: flex;
+    justify-content: space-between;
+    .card-button {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  .footer-card {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+// -----------
+// форма
+.form-question {
+  margin-top: 50px;
+  background-image: url(/img/form-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  input,
+  textarea {
+    min-height: 30px;
+    border: 1px solid #cc0000;
+    margin-bottom: 20px;
+    resize: none;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+}
+// -----------
+// подвал
+footer {
+  width: 100vw;
+  min-height: 500px;
+  background-color: #131313;
+  padding: 40px 0;
+  nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .footer-center {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    p {
+      font-family: "RussoOne";
+      font-weight: 400;
+      font-size: 14px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    li {
+      margin-bottom: 3px;
+      a {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 13px;
+        color: #858585;
+      }
+    }
+    .contact-footer {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        &:hover {
+          transition: 0.3s;
+          color: #cc0000;
+          text-decoration: underline;
+        }
+      }
+      span {
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+      address {
+        font-style: normal;
+        margin-bottom: 15px;
+        a {
+          font-family: "Montserrat";
+          font-size: 12px;
+          font-weight: 300;
+          &:hover {
+            transition: 0.3s;
+            color: #cc0000;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      min-height: 100px;
+      hr {
+        border-color: #2a2a2a;
+      }
+      .text {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        p,
+        a {
+          font-family: "Montserrat";
+          font-size: 12px;
+          font-weight: 300;
+          color: #858585;
+        }
+      }
+    }
+  }
+}
+.none {
+  display: none;
+}
+// --------
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease 0s;
+  .popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    
+    .popup-content {
+      background-color: white;
+      max-width: 800px;
+      padding: 30px;
+      position: relative;
+      transition: all 0.8s ease 0s;
+      opacity: 0;
+      // transform: translate(0px, -100%);
+      transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+      .popup-title {
+        margin-bottom: 20px;
+        p {
+          font-family: "RussoOne";
+          margin-top: 0px;
+          font-size: 25px;
+          color: #131313;
+        }
+      }
+      .popup-text {
+        p {
+          margin-top: 0px;
+          color: black;
+        }
+      }
+      .popup-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        img{
+          width: 22px;
+        }
+      }
+    }
+  }
+}
+
+.popup{
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease 0s;
+  .popup-content {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  }
+  &:target {
+    opacity: 1;
+    visibility: visible;
+    .popup-content {
+      transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+      opacity: 1;
+    }
+  }
+}
+.popup_area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
